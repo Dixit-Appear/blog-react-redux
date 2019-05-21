@@ -8,9 +8,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { createHistory as history } from 'history';
 
 import '../assets/stylesheets/application.scss';
+import postsReducer from './reducers/posts';
 
 const reducers = combineReducers({
-  // key: reducer
+  posts : postsReducer
 });
 
 const middlewares = applyMiddleware(reduxPromise, logger);
