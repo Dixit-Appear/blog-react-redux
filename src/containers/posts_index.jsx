@@ -39,7 +39,7 @@ class PostsIndex extends Component {
 
 function mapStateToProps(state) {
   return {
-    posts: state.props
+    posts: state.posts
   };
 }
 
