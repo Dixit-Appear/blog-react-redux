@@ -1,5 +1,5 @@
 const ROOT_URL = 'http://reduxblog.herokuapp.com/api/posts';
-const API_KEY = 'LEWAGON-BLOG';
+const API_KEY = '123';
 
 export const FETCH_POSTS = 'FETCH_POSTS';
 

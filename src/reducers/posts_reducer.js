@@ -4,7 +4,7 @@ export default function(state, action) {
   if (state === undefined) {
     return [];
   }
-  switch (action.payload) {
+  switch (action.type) {
     case FETCH_POSTS:
       return action.payload;
     default:
