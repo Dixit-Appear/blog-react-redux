@@ -1,4 +1,4 @@
-import { FETCH_POSTS, FETCH_POST } from '../actions/index';
+import { FETCH_POSTS, FETCH_POST, POST_CREATED } from '../actions/index';
 
 export default function(state, action) {
   if (state === undefined) {
@@ -9,6 +9,8 @@ export default function(state, action) {
       return action.payload;
     case FETCH_POST:
       return [action.payload];
+    case POST_CREATED:
+      return state;
     default:
       return state;
   }
